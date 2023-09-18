@@ -1,13 +1,15 @@
+
+
 # This a test file for experiment
-class Person:
-    def __init__(self, firstname, lastname, age):
-        self.firstname = firstname
-        self.lastname = lastname
-        self.age = age
 
-    print("hey")
-    def full_name(self):
-        return f"{self.firstname} {self.lastname}"
+def add_num(num1, num2):
+    sum = num1 + num2
+    return sum
 
-    def full_profile(self):
-        return f"Name: {self.firstname} {self.lastname} Age: {self.age}"
+result = add_num(5, 4)
+
+print('Sum: ', result)
+
+# Output: Sum: 9
+
+
