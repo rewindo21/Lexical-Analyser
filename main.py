@@ -3,7 +3,7 @@ import re
 keyword_list = ["False", "class", "from", "or", "None", "continue", "global", "pass", "break",
                 "True", "def", "if", "raise", "and", "del", "import", "return", "for", "input"
                 "as", "elif", "in", "try", "assert", "else", "is", "while", "not", "print",
-                "async", "except", "lambda", "with", "await", "finally", "nonlocal", "yield"]
+                "async", "except", "lambda", "with", "await", "finally", "nonlocal", "yield", "self"]
 # help("keywords")
 
 operator_list = ["+", "-", "*", "/", "**", "//", "%",
@@ -44,10 +44,10 @@ def nl_remover(words):
     return list
 
 
-# Analyse words
 def analyser(words):
     inner_code = 1
     f = 0
+    print('----------------------------')
     print('< ' + 'CODE' + ' | ' + '  DATA' + '  |  ' + 'TYPE' + '   >')
     print('----------------------------')
     for w in words:
